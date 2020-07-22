@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonComponent should create the raw component 1`] = `
+<ng-component>
+  <button
+    class="custom-button"
+    custombutton=""
+  >
+    <span
+      class="custom-button__wrapper custom-button__wrapper__icon-left"
+    >
+      Hello World!
+    </span>
+  </button>
+</ng-component>
+`;
+
+exports[`ButtonComponent should have class custom-button--outline 1`] = `
+<ng-component>
+  <button
+    class="custom-button custom-button--outline"
+    custombutton=""
+    outline=""
+  >
+    <span
+      class="custom-button__wrapper custom-button__wrapper__icon-left"
+    >
+      Hello World!
+    </span>
+  </button>
+</ng-component>
+`;
+
+exports[`ButtonComponent should have class custom-button--secondary 1`] = `
+<ng-component>
+  <button
+    class="custom-button custom-button--secondary"
+    color="secondary"
+    custombutton=""
+  >
+    <span
+      class="custom-button__wrapper custom-button__wrapper__icon-left"
+    >
+      Hello World!
+    </span>
+  </button>
+</ng-component>
+`;

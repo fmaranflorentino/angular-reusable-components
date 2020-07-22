@@ -10,9 +10,10 @@ import { ButtonComponent } from './button/button.component';
     ButtonComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [ButtonComponent]
 })
 export class AppModule { }

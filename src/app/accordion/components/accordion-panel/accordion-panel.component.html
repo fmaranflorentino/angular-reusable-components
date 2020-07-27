@@ -1,0 +1,13 @@
+<div
+  class="accordion_panel__header_content"
+  [ngClass]="{ 'accordion_panel__header_content--disabled': isDisabled }"
+  (click)="handlePanelInteraction()"
+>
+  <ng-content select="app-accordion-panel-header"></ng-content>
+  <!-- <ng-content select="app-accordion-panel-description"></ng-content> -->
+
+</div>
+
+<div class="accordion_panel__body" *ngIf="isExpanded" @body>
+  <ng-content select="app-accordion-panel-content"></ng-content>
+</div>

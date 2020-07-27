@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'app-accordion',
+  selector: 'accordion',
   templateUrl: './accordion.component.html',
   styleUrls: ['./accordion.component.scss'],
 })

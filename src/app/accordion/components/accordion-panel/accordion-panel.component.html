@@ -1,13 +1,22 @@
 <div
-  class="accordion_panel__header_content"
-  [ngClass]="{ 'accordion_panel__header_content--disabled': isDisabled }"
+  class="accordion_panel__header__container"
   (click)="handlePanelInteraction()"
 >
-  <ng-content select="app-accordion-panel-header"></ng-content>
-  <!-- <ng-content select="app-accordion-panel-description"></ng-content> -->
+  <app-accordion-panel-header [expanded]="isExpanded" [hideToggle]="isHideToggle">
+    <ng-container headerTitle>
+      <ng-content select="[panel-header-title]"></ng-content>
+    </ng-container>
 
+    <span panelDescription>
+      <ng-content select="[accordion-panel-description]"></ng-content>
+    </span>
+
+    <ng-container headerIcon>
+      <ng-content select="[panel-header-icon]"></ng-content>
+    </ng-container>
+  </app-accordion-panel-header>
 </div>
 
-<div class="accordion_panel__body" *ngIf="isExpanded" @body>
-  <ng-content select="app-accordion-panel-content"></ng-content>
+<div role="region" class="accordion_panel__body" *ngIf="isExpanded" @body>
+  <ng-content select="accordion-panel-content"></ng-content>
 </div>

@@ -12,8 +12,8 @@ import { CommonModule } from '@angular/common';
 import { AccordionPanelContentComponent } from './accordion/components/accordion-panel-content/accordion-panel-content.component';
 import { BottomSheatComponent } from './accordion/components/bottom-sheat/bottom-sheat.component';
 import { BottomSheetComponent } from './accordion/components/bottom-sheet/bottom-sheet.component';
-import { testeServ } from './accordion/components/bottom-sheet/teste';
-import { OVERLAY_PROVIDERS } from '@angular/cdk/overlay';
+// import { testeServ } from './accordion/components/bottom-sheet/teste';
+// import { OVERLAY_PROVIDERS } from '@angular/cdk/overlay';
 import { PanelHeaderTitleComponent } from './accordion/components/accordion-panel-header/components/panel-header-title/panel-header-title.component';
 
 @NgModule({
@@ -27,19 +27,25 @@ import { PanelHeaderTitleComponent } from './accordion/components/accordion-pane
     AccordionPanelContentComponent,
     BottomSheatComponent,
     BottomSheetComponent,
-    PanelHeaderTitleComponent
+    PanelHeaderTitleComponent,
   ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    CommonModule,
-  ],
+  imports: [BrowserModule, BrowserAnimationsModule, CommonModule],
   providers: [
-    testeServ,
-    OVERLAY_PROVIDERS,
+    // testeServ,
+    // OVERLAY_PROVIDERS,
   ],
   bootstrap: [AppComponent],
-  exports: [ButtonComponent],
+  exports: [
+    ButtonComponent,
+    AccordionComponent,
+    AccordionPanelComponent,
+    AccordionPanelHeaderComponent,
+    AccordionPanelDescriptionComponent,
+    AccordionPanelContentComponent,
+    BottomSheatComponent,
+    BottomSheetComponent,
+    PanelHeaderTitleComponent,
+  ],
   entryComponents: [BottomSheetComponent],
 })
-export class AppModule { }
+export class AppModule {}

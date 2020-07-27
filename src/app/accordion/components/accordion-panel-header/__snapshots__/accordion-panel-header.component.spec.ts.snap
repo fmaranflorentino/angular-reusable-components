@@ -1,0 +1,216 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AccordionPanelHeaderComponent should create and match raw component snapshot 1`] = `
+<ng-component>
+  <app-accordion-panel-header
+    class="accordion_panel__header"
+  >
+    <div
+      class="accordion_panel__header__wrapper"
+    >
+      <div
+        class="custom_icon__container"
+      >
+        <span
+          class="custom_icon"
+        />
+        
+        <span
+          class="material-icons toggle"
+        >
+           keyboard_arrow_down 
+        </span>
+      </div>
+    </div>
+  </app-accordion-panel-header>
+</ng-component>
+`;
+
+exports[`AccordionPanelHeaderComponent should have css class accordion_panel__header 1`] = `
+<ng-component>
+  <app-accordion-panel-header
+    class="accordion_panel__header"
+  >
+    <div
+      class="accordion_panel__header__wrapper"
+    >
+      <div
+        class="custom_icon__container"
+      >
+        <span
+          class="custom_icon"
+        />
+        
+        <span
+          class="material-icons toggle"
+        >
+           keyboard_arrow_down 
+        </span>
+      </div>
+    </div>
+  </app-accordion-panel-header>
+</ng-component>
+`;
+
+exports[`AccordionPanelHeaderComponent should have css class accordion_panel__header--hidetoggle 1`] = `
+<ng-component>
+  <app-accordion-panel-header
+    class="accordion_panel__header accordion_panel__header--hidetoggle"
+  >
+    <div
+      class="accordion_panel__header__wrapper"
+    >
+      <div
+        class="custom_icon__container"
+      >
+        <span
+          class="custom_icon"
+        />
+        
+      </div>
+    </div>
+  </app-accordion-panel-header>
+</ng-component>
+`;
+
+exports[`AccordionPanelHeaderComponent should have css class accordion_panel__header--toggleanime 1`] = `
+<ng-component>
+  <app-accordion-panel-header
+    class="accordion_panel__header accordion_panel__header--toggleanime"
+  >
+    <div
+      class="accordion_panel__header__wrapper"
+    >
+      <div
+        class="custom_icon__container"
+      >
+        <span
+          class="custom_icon"
+        />
+        
+        <span
+          class="material-icons toggle"
+        >
+           keyboard_arrow_down 
+        </span>
+      </div>
+    </div>
+  </app-accordion-panel-header>
+</ng-component>
+`;
+
+exports[`AccordionPanelHeaderComponent should render a custom icon 1`] = `
+<ng-component>
+  <app-accordion-panel-header
+    class="accordion_panel__header"
+  >
+    <div
+      class="accordion_panel__header__wrapper"
+    >
+      <div
+        class="custom_icon__container"
+      >
+        <span
+          class="custom_icon"
+        >
+          
+        </span>
+        
+        <span
+          class="material-icons toggle"
+        >
+           keyboard_arrow_down 
+        </span>
+      </div>
+    </div>
+  </app-accordion-panel-header>
+</ng-component>
+`;
+
+exports[`AccordionPanelHeaderComponent should render description 1`] = `
+<ng-component>
+  <app-accordion-panel-header
+    class="accordion_panel__header"
+  >
+    <div
+      class="accordion_panel__header__wrapper"
+    >
+      <span
+        paneldescription=""
+      />
+      <div
+        class="custom_icon__container"
+      >
+        <span
+          class="custom_icon"
+        />
+        
+        <span
+          class="material-icons toggle"
+        >
+           keyboard_arrow_down 
+        </span>
+      </div>
+    </div>
+  </app-accordion-panel-header>
+</ng-component>
+`;
+
+exports[`AccordionPanelHeaderComponent should render title 1`] = `
+<ng-component>
+  <app-accordion-panel-header
+    class="accordion_panel__header"
+  >
+    <div
+      class="accordion_panel__header__wrapper"
+    >
+      
+      <div
+        class="custom_icon__container"
+      >
+        <span
+          class="custom_icon"
+        />
+        
+        <span
+          class="material-icons toggle"
+        >
+           keyboard_arrow_down 
+        </span>
+      </div>
+    </div>
+  </app-accordion-panel-header>
+</ng-component>
+`;
+
+exports[`AccordionPanelHeaderComponent should render title, description and icon together 1`] = `
+<ng-component>
+  <app-accordion-panel-header
+    class="accordion_panel__header"
+  >
+    <div
+      class="accordion_panel__header__wrapper"
+    >
+      
+      <span
+        paneldescription=""
+      />
+      <div
+        class="custom_icon__container"
+      >
+        <span
+          class="custom_icon"
+        >
+          
+        </span>
+        
+        <span
+          class="material-icons toggle"
+        >
+           keyboard_arrow_down 
+        </span>
+      </div>
+    </div>
+  </app-accordion-panel-header>
+</ng-component>
+`;

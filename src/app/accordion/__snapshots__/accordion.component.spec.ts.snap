@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AccordionComponent should create and match raw component snapshot 1`] = `
+<ng-component>
+  <accordion>
+    <div
+      class="accordion"
+    />
+  </accordion>
+</ng-component>
+`;

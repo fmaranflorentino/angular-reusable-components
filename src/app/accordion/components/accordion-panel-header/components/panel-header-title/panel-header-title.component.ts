@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostBinding } from '@angular/core';
 
 @Component({
   selector: 'h3[panel-header-title]',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./panel-header-title.component.scss']
 })
 export class PanelHeaderTitleComponent implements OnInit {
+  @HostBinding('class.accordion_panel__header__title')
+  panelHeaderTitle = true;
 
   constructor() { }
 

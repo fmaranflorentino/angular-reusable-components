@@ -16,6 +16,7 @@
   "exclude": [
     "src/environments/*.ts",
     "main.ts",
-    "polyfills.ts"
+    "polyfills.ts",
+    "src/app/app.component.spec.ts"
   ]
 }

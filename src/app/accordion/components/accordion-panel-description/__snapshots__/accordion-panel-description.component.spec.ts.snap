@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AccordionPanelDescriptionComponent should create and match raw component snapshot 1`] = `
+<ng-component>
+  <span
+    accordion-panel-description=""
+    class="accordion_panel__header__description"
+  >
+    description text
+  </span>
+</ng-component>
+`;
+
+exports[`AccordionPanelDescriptionComponent should have css class accordion_panel__header__description 1`] = `
+<ng-component>
+  <span
+    accordion-panel-description=""
+    class="accordion_panel__header__description"
+  >
+    description text
+  </span>
+</ng-component>
+`;

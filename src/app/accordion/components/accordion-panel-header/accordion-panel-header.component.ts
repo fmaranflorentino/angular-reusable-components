@@ -10,9 +10,14 @@ export class AccordionPanelHeaderComponent implements OnInit {
   @HostBinding('class.accordion_panel__header')
   accordionPanelHeader = true;
 
-  @Input()
-  set iconAlign(value: string) {
-    this._iconAlign = value;
+  @HostBinding('class.accordion_panel__header--hidetoggle')
+  get hideToggleValue() {
+    return this.isHideToggle === true;
+  }
+
+  @HostBinding('class.accordion_panel__header--toggleanime')
+  get expandedValue() {
+    return this.isExpanded === true;
   }
 
   @Input()
@@ -20,18 +25,23 @@ export class AccordionPanelHeaderComponent implements OnInit {
     this._hideToggle = value !== null && `${value}` !== 'false';
   }
 
-  @Input() teste;
+  @Input()
+  set expanded(value) {
+    this._expanded = value;
+  }
 
   get isHideToggle(): boolean {
     return this._hideToggle;
   }
 
-  get iconAlignValue(): string {
-    return this._iconAlign;
+  get isExpanded(): boolean {
+    return this._expanded;
   }
 
-  private _iconAlign;
+
   private _hideToggle: boolean;
+
+  private _expanded: boolean;
 
   constructor() { }
 

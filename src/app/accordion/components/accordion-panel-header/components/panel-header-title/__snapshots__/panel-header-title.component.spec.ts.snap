@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PanelHeaderTitleComponent should create and match raw component snapshot 1`] = `
+<ng-component>
+  <h3
+    class="accordion_panel__header__title"
+    panel-header-title=""
+  >
+    Title
+  </h3>
+</ng-component>
+`;
+
+exports[`PanelHeaderTitleComponent should have css class accordion_panel__header__title 1`] = `
+<ng-component>
+  <h3
+    class="accordion_panel__header__title"
+    panel-header-title=""
+  >
+    Title
+  </h3>
+</ng-component>
+`;

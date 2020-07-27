@@ -1,22 +1,25 @@
-import { TestBed, async } from '@angular/core/testing';
-import { RouterTestingModule } from '@angular/router/testing';
+import { SpectatorHost, createHostFactory } from '@ngneat/spectator/jest';
+import { axe } from 'jest-axe';
+
+import { AppModule } from './app.module';
+import { APP_BASE_HREF } from '@angular/common';
 import { AppComponent } from './app.component';
 
-describe('AppComponent', () => {
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule
-      ],
-      declarations: [
-        AppComponent
-      ],
-    }).compileComponents();
-  }));
+const cases = {
+  simple: `<app-root></app-root>`,
+};
 
-  it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
+describe('AppComponent', () => {
+  let subject: SpectatorHost<AppComponent>;
+  const createHost = createHostFactory({
+    component: AppComponent,
+    declareComponent: false,
+    imports: [ AppModule ],
+    providers: [{provide: APP_BASE_HREF, useValue: '/'}]
+  });
+
+  it('should create instance', () => {
+    subject = createHost(cases.simple);
+    expect(subject.component).toBeTruthy();
   });
 });

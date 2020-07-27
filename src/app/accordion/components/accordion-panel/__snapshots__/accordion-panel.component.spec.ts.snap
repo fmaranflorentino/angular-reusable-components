@@ -1,0 +1,231 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AccordionPanelComponent should create and match raw component snapshot 1`] = `
+<ng-component>
+  <accordion-panel
+    class="accordion_panel"
+  >
+    <div
+      class="accordion_panel__header__container"
+    >
+      <app-accordion-panel-header
+        class="accordion_panel__header"
+      >
+        <div
+          class="accordion_panel__header__wrapper"
+        >
+          
+          <span
+            paneldescription=""
+          />
+          <div
+            class="custom_icon__container"
+          >
+            <span
+              class="custom_icon"
+            >
+              
+            </span>
+            
+            <span
+              class="material-icons toggle"
+            >
+               keyboard_arrow_down 
+            </span>
+          </div>
+        </div>
+      </app-accordion-panel-header>
+    </div>
+    
+  </accordion-panel>
+</ng-component>
+`;
+
+exports[`AccordionPanelComponent should have class accordion_panel 1`] = `
+<ng-component>
+  <accordion-panel
+    class="accordion_panel"
+  >
+    <div
+      class="accordion_panel__header__container"
+    >
+      <app-accordion-panel-header
+        class="accordion_panel__header"
+      >
+        <div
+          class="accordion_panel__header__wrapper"
+        >
+          
+          <span
+            paneldescription=""
+          />
+          <div
+            class="custom_icon__container"
+          >
+            <span
+              class="custom_icon"
+            >
+              
+            </span>
+            
+            <span
+              class="material-icons toggle"
+            >
+               keyboard_arrow_down 
+            </span>
+          </div>
+        </div>
+      </app-accordion-panel-header>
+    </div>
+    
+  </accordion-panel>
+</ng-component>
+`;
+
+exports[`AccordionPanelComponent should have class accordion_panel__header__container--disabled 1`] = `
+<ng-component>
+  <accordion-panel
+    class="accordion_panel accordion_panel__header__container--disabled"
+    disabled=""
+  >
+    <div
+      class="accordion_panel__header__container"
+    >
+      <app-accordion-panel-header
+        class="accordion_panel__header"
+      >
+        <div
+          class="accordion_panel__header__wrapper"
+        >
+          
+          <span
+            paneldescription=""
+          />
+          <div
+            class="custom_icon__container"
+          >
+            <span
+              class="custom_icon"
+            >
+              
+            </span>
+            
+            <span
+              class="material-icons toggle"
+            >
+               keyboard_arrow_down 
+            </span>
+          </div>
+        </div>
+      </app-accordion-panel-header>
+    </div>
+    
+  </accordion-panel>
+</ng-component>
+`;
+
+exports[`AccordionPanelComponent should have class accordion_panel--expanded 1`] = `
+<ng-component>
+  <accordion-panel
+    class="accordion_panel accordion_panel--expanded"
+  >
+    <div
+      class="accordion_panel__header__container"
+    >
+      <app-accordion-panel-header
+        class="accordion_panel__header accordion_panel__header--toggleanime"
+      >
+        <div
+          class="accordion_panel__header__wrapper"
+        >
+          
+          <span
+            paneldescription=""
+          />
+          <div
+            class="custom_icon__container"
+          >
+            <span
+              class="custom_icon"
+            >
+              
+            </span>
+            
+            <span
+              class="material-icons toggle"
+            >
+               keyboard_arrow_down 
+            </span>
+          </div>
+        </div>
+      </app-accordion-panel-header>
+    </div>
+    
+    <div
+      class="accordion_panel__body ng-trigger ng-trigger-body ng-animating"
+      role="region"
+      style="animation: 500ms ease-in 0ms 1 normal forwards gen_css_kf_0; animation-play-state: running;"
+    />
+  </accordion-panel>
+</ng-component>
+`;
+
+exports[`AccordionPanelComponent should render the component with all children 1`] = `
+<ng-component>
+  <accordion-panel
+    class="accordion_panel"
+  >
+    <div
+      class="accordion_panel__header__container"
+    >
+      <app-accordion-panel-header
+        class="accordion_panel__header"
+      >
+        <div
+          class="accordion_panel__header__wrapper"
+        >
+          
+          <h3
+            class="accordion_panel__header__title"
+            panel-header-title=""
+          >
+            Angular - Developer Experience
+          </h3>
+          <span
+            paneldescription=""
+          >
+            <span
+              accordion-panel-description=""
+              class="accordion_panel__header__description"
+            >
+              A meetup event for defining the future of developer experience.
+            </span>
+          </span>
+          <div
+            class="custom_icon__container"
+          >
+            <span
+              class="custom_icon"
+            >
+              
+              <span
+                class="material-icons"
+                panel-header-icon=""
+              >
+                 account_circle 
+              </span>
+            </span>
+            
+            <span
+              class="material-icons toggle"
+            >
+               keyboard_arrow_down 
+            </span>
+          </div>
+        </div>
+      </app-accordion-panel-header>
+    </div>
+    
+  </accordion-panel>
+</ng-component>
+`;

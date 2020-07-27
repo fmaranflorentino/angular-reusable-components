@@ -1,19 +1,14 @@
 <div class="accordion_panel__header__wrapper">
+  <ng-content select="[headerTitle]"></ng-content>
 
-  <ng-content select="[panel-header-title]"></ng-content>
+  <ng-content select="[panelDescription]"></ng-content>
 
-  <ng-content select="[app-accordion-panel-description]"></ng-content>
-
-  <div class="icon_content">
-    <span class="custom_icon" [ngClass]="{'hideIcon': isHideToggle}">
-      <ng-content select="[panel-header-icon]"></ng-content>
+  <div class="custom_icon__container">
+    <span class="custom_icon">
+      <ng-content select="[headerIcon]"></ng-content>
     </span>
-    <img
-      src="assets/down-arrow.svg"
-      alt="Toggle expansion"
-      *ngIf="!isHideToggle"
-      class="toggle"
-    />
+    <span class="material-icons toggle" *ngIf="!isHideToggle">
+      keyboard_arrow_down
+    </span>
   </div>
-
 </div>

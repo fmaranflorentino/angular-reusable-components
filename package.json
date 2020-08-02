@@ -2,7 +2,7 @@
   "name": "angular-reusable-components",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
+    "ng": "ng --aot",
     "start": "ng serve",
     "build": "ng build",
     "lint": "ng lint",

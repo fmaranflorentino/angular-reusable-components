@@ -1,6 +1,6 @@
 <section>
-  <button customButton color="primary">
-    primary
+  <button customButton color="primary" (click)="open()">
+    primary open bottom sheet
   </button>
 
   <button customButton color="secondary">
@@ -51,3 +51,30 @@
     <accordion-panel-content>content man</accordion-panel-content>
   </accordion-panel>
 </accordion>
+
+<hr>
+
+<button (click)="setvalue()">set value</button>
+
+<form [formGroup]="form">
+  <app-input-field label="Nome">
+    <input type="text" formControlName="teste" id="tt" customInput (change)="formchange()" (input)="forminput()">
+  </app-input-field>
+
+  <app-input-field label="E-mail">
+    <input type="text" formControlName="teste2" id="ttt" customInput (change)="formchange()" (input)="forminput()">
+  </app-input-field>
+
+  <app-input-field label="Endereço">
+    <input type="text" formControlName="teste3" id="ttt" customInput (change)="formchange()" (input)="forminput()">
+  </app-input-field>
+</form>
+
+
+<div class="div" skeleton [loading]="variable"></div>
+<div class="div" skeleton loading></div>
+<!-- <input type="text" customInput disabled>
+
+<app-input-field>
+  <input type="text" customInput disabled>
+</app-input-field> -->

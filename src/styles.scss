@@ -207,10 +207,10 @@ body {
 }
 
 .skeleton {
-  @extend .loading-background-highlight;
+  @extend .loading-skeleton-highlight;
 }
 
-@keyframes placeHolderShimmer {
+@keyframes skeletonShimmer {
   0% {
     background-position: 0;
   }
@@ -223,8 +223,8 @@ body {
   }
 }
 
-.loading-background-highlight {
-  animation: placeHolderShimmer 2s infinite ease-in-out;
+.loading-skeleton-highlight {
+  animation: skeletonShimmer 2s infinite ease-in-out;
   background-image: linear-gradient(
     90deg,
     #f4f4f4 0px,

@@ -10,11 +10,14 @@ import { AccordionPanelHeaderComponent } from './accordion/components/accordion-
 import { AccordionPanelDescriptionComponent } from './accordion/components/accordion-panel-description/accordion-panel-description.component';
 import { CommonModule } from '@angular/common';
 import { AccordionPanelContentComponent } from './accordion/components/accordion-panel-content/accordion-panel-content.component';
-import { BottomSheatComponent } from './accordion/components/bottom-sheat/bottom-sheat.component';
-import { BottomSheetComponent } from './accordion/components/bottom-sheet/bottom-sheet.component';
-// import { testeServ } from './accordion/components/bottom-sheet/teste';
-// import { OVERLAY_PROVIDERS } from '@angular/cdk/overlay';
+import { OVERLAY_PROVIDERS } from '@angular/cdk/overlay';
 import { PanelHeaderTitleComponent } from './accordion/components/accordion-panel-header/components/panel-header-title/panel-header-title.component';
+import { BottomSheetService } from './bottom-sheet/bottom-sheet.service';
+import { BottomSheetComponent } from './bottom-sheet/bottom-sheet.component';
+import { CustomInputDirective } from './input/custom-input.directive';
+import { InputFieldComponent } from './input/input-field/input-field.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SkeletonDirective } from './skeleton/skeleton.directive';
 
 @NgModule({
   declarations: [
@@ -25,14 +28,16 @@ import { PanelHeaderTitleComponent } from './accordion/components/accordion-pane
     AccordionPanelHeaderComponent,
     AccordionPanelDescriptionComponent,
     AccordionPanelContentComponent,
-    BottomSheatComponent,
     BottomSheetComponent,
     PanelHeaderTitleComponent,
+    CustomInputDirective,
+    InputFieldComponent,
+    SkeletonDirective,
   ],
-  imports: [BrowserModule, BrowserAnimationsModule, CommonModule],
+  imports: [BrowserModule, BrowserAnimationsModule, CommonModule, FormsModule, ReactiveFormsModule],
   providers: [
-    // testeServ,
-    // OVERLAY_PROVIDERS,
+    BottomSheetService,
+    OVERLAY_PROVIDERS,
   ],
   bootstrap: [AppComponent],
   exports: [
@@ -42,9 +47,9 @@ import { PanelHeaderTitleComponent } from './accordion/components/accordion-pane
     AccordionPanelHeaderComponent,
     AccordionPanelDescriptionComponent,
     AccordionPanelContentComponent,
-    BottomSheatComponent,
     BottomSheetComponent,
     PanelHeaderTitleComponent,
+    FormsModule, ReactiveFormsModule
   ],
   entryComponents: [BottomSheetComponent],
 })

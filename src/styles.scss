@@ -101,3 +101,135 @@ body {
     }
   }
 }
+
+.overlay-custom {
+  background-color: rgba(#000, 0.8);
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    ransform: translateY(100px);
+    opacity: 1;
+  }
+}
+
+.bottom-sheet-teste {
+  animation: slideUp 0.5s;
+  background: #fff;
+
+  min-width: 250px;
+  padding: 20px;
+}
+
+.input_field {
+  position: relative;
+  margin-bottom: 45px;
+
+  label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+  }
+
+  .animated-bar {
+    position: relative;
+    display: block;
+    width: 100%;
+
+    &:after,
+    &:before {
+      content: "";
+      height: 2px;
+      width: 0;
+      bottom: 1px;
+      position: absolute;
+      background: #5264ae;
+      transition: 0.2s ease all;
+      -moz-transition: 0.2s ease all;
+      -webkit-transition: 0.2s ease all;
+    }
+
+    &:before {
+      left: 50%;
+    }
+
+    &:after {
+      right: 50%;
+    }
+  }
+
+  input {
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #757575;
+
+    &:focus {
+      outline: none;
+
+      ~ label {
+        top: -20px;
+        font-size: 14px;
+        color: #5264ae;
+      }
+
+      ~ .animated-bar {
+        &:after,
+        &:before {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+
+.div {
+  width: 200px !important;
+  height: 200px !important;
+}
+
+.skeleton {
+  @extend .loading-background-highlight;
+}
+
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: 0;
+  }
+
+  40% {
+    background-position: 440px;
+  }
+  100% {
+    background-position: 900px;
+  }
+}
+
+.loading-background-highlight {
+  animation: placeHolderShimmer 2s infinite ease-in-out;
+  background-image: linear-gradient(
+    90deg,
+    #f4f4f4 0px,
+    rgba(229, 229, 229, 0.8) 40px,
+    #f4f4f4 80px
+  );
+  background-size: 900px;
+}
